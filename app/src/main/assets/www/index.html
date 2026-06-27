@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FH6 Spotify Radio Companion</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0f1724; --card:#182536; --accent:#1ed760; --text:#f6f8fb; --muted:#aeb8c8; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background:linear-gradient(180deg,#101820,#07101d); color:var(--text); }
+    header { padding:28px 22px 10px; }
+    h1 { margin:0 0 8px; font-size:30px; line-height:1.05; }
+    h2 { margin:0 0 10px; color:var(--accent); font-size:18px; }
+    p, li { color:var(--muted); line-height:1.45; }
+    main { padding:0 16px 28px; }
+    .card { background:rgba(24,37,54,.94); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:18px; margin:14px 0; box-shadow:0 10px 30px rgba(0,0,0,.22); }
+    .pill { display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(30,215,96,.13); color:#8ff0b5; font-weight:700; font-size:12px; letter-spacing:.03em; }
+    code { color:#9df7bd; background:#0b121d; padding:2px 6px; border-radius:6px; }
+    ol, ul { padding-left:22px; }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="pill">Spotify Connect + FH6 helper</span>
+    <h1>FH6 Spotify Radio Companion</h1>
+    <p>This APK helps your phone connect Spotify to the Forza Horizon 6 Spotify Radio PC mod workflow.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>What this Android app does</h2>
+      <ul>
+        <li>Opens Spotify so you can select <strong>FH6 Radio</strong> in Spotify Connect.</li>
+        <li>Opens the PC mod dashboard at <code>http://&lt;PC-IP&gt;:8103</code>.</li>
+        <li>Listens for Forza UDP telemetry on port <code>5300</code> and shows speed/RPM/gear in the toolbar.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Required on the PC</h2>
+      <ol>
+        <li>Install the Spotify Radio mod in the Forza Horizon 6 game folder where <code>forzahorizon6.exe</code> is located.</li>
+        <li>Make sure <code>version.dll</code> and the <code>spotify-radio</code> folder are next to the game executable.</li>
+        <li>Launch FH6, set <strong>Radio DJ Off</strong> and <strong>Streamer Mode On</strong>.</li>
+        <li>Open Spotify on this phone and select <strong>FH6 Radio</strong>.</li>
+      </ol>
+    </section>
+    <section class="card">
+      <h2>Important</h2>
+      <p>The Android APK is a companion/controller. The actual in-game radio routing must happen on the PC mod. Spotify Premium is normally required for unofficial Spotify Connect playback.</p>
+    </section>
+    <section class="card">
+      <h2>If FH6 Radio does not appear</h2>
+      <ul>
+        <li>Put the phone and PC on the same local network.</li>
+        <li>Disable VPN, private DNS filtering, or network isolation.</li>
+        <li>Allow FH6/the mod through Windows Firewall on private networks.</li>
+        <li>Open the dashboard from this app and verify that the mod is running.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
