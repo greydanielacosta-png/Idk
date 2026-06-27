@@ -26,6 +26,16 @@ Typical PC-side setup:
 
 Spotify Premium is normally required for unofficial Spotify Connect playback.
 
+## Conflict check
+
+If GitHub or your local checkout reports conflicts, run:
+
+```bash
+scripts/check_conflicts.sh
+```
+
+The script scans tracked project files for unresolved merge-conflict markers such as `<<<<<<<`, `=======`, and `>>>>>>>`.
+
 ## Build the APK
 
 ```bash
